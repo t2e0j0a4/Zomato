@@ -1,0 +1,265 @@
+/* Other API */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  margin-top: 0;
+}
+
+.navbar .navBox1 a {
+  font-size: 0.96rem;
+}
+
+.navbar .navBox2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navBox2 ul li a {
+  margin: 0 15px;
+  line-height: 1.5px;
+  font-size: 1.2rem;
+  padding-top: 5px;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  max-width: 100%;
+  height: 64vh;
+  background-color: black;
+  background-image: url("../Images/bg.avif");
+  background-position: center;
+  background-size: cover;
+}
+
+#header .startLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+#header .startLogo img {
+  width: 100%;
+  max-width: 25%;
+}
+
+#header .startLogo p {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 550;
+  text-align: center;
+}
+
+#header .search {
+  width: 100%;
+  max-width: 55%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+#header .search .location {
+  width: 25%;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 0 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+#header .search .line {
+  height: 25px;
+  width: 1.5px;
+  background-color: black;
+  /* margin: 0 10px; */
+  margin: 0 10px 0 20px;
+}
+
+#header .search .searchLogo {
+  margin: 0px 0 0 10px;
+}
+
+#header .search .searchBar {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  border-radius: 10px;
+}
+
+#header .search .searchBar input {
+  width: 100%;
+  padding: 15px 2px 15px 25px;
+  font-size: 1.5rem;
+  outline: none;
+  /* text-transform : lowercase; */
+  border: none;
+  font-weight: 100;
+  border-radius: 10px;
+}
+
+#zomatosmLogo {
+  display: none;
+}
+
+#menu{
+    display: none;
+}
+
+.downarrow i{
+    transform: rotate(0deg);
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    padding: 50px 0;
+    margin-top: -900px;
+  }
+  .navbar .navBox1 {
+    display: none;
+    
+  }
+  .navbar .navBox2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 243, 245);
+  }
+  .navbar .navBox2 #zomatosmLogo{
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 15px 20px 0 0;
+    
+  }
+  .navbar .navBox2 #zomatosmLogo img{
+    text-align: right;
+    object-fit: cover;
+    width: 100%;
+    max-width: 30%;
+  }
+  .navbar .navBox2 ul{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar .navBox2 ul li a{
+    color: black;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .navbar .navBox2 ul li{
+    color: black;
+    margin: 20px 0;
+    text-align: center;
+  }
+  #menu{
+    display: block;
+    position: absolute;
+    top : 0;
+    left: 0;
+    margin: 22px 0px 0px 25px;
+    cursor: pointer;
+    color: white;
+  }
+  .navbarBack{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    background-color: white;
+    height: 100vh;
+    padding: 50px 0;
+    margin-top: 0px;
+  }
+  
+
+  /* Header */
+
+  #header {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+    background-image: url("../Images/bg.avif");
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
+  }
+
+  #header .search{
+    padding: 0px 5px;
+    width: 100%;
+    max-width:  90%;
+  }
+  
+  #header .location {
+    padding: 0 1px;
+  }
+}
+
+@media only screen and (max-width : 850px) {
+    #header .search .location .downarrow i{
+        display: none;
+    }
+}
+
