@@ -1,4 +1,5 @@
-# Zomato
-# Zomato Header made using HTML , CSS , JS 
-# Official Zomato Web site : https://www.zomato.com
-# Website Look like : 
+# Zomato Header Clone
+
+A Pure HTML , CSS , JS Project \ 
+It's a header component of Zomato Web Site. \
+Can Check Here : https://zomatoheaderclone.netlify.app
